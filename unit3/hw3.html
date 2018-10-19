@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style type="text/css">
+	.wrapper {
+		/*background-image: 	url(images/tuyet.jpg);*/
+		width: 60%;
+		height: 100%;
+	}
+	.header{
+		width: 70%;
+		height: 300px;
+		margin: 0 auto;
+	}
+	.header-top{
+		margin: ;
+	}
+	.wrapper.content{
+		width: 70%;
+		height: 80%;
+		margin: 0 auto;
+	}
+	.menu{
+		height: 30px;
+		width: 140%;
+		margin-top: 0%;
+		background-color: grey;
+		line-height: 30px;
+	}
+	.menu-left, .menu-center, .menu-right{
+		float: left;
+	}
+	.menu-left{
+		width: 20%;
+
+	}
+	.menu-center{
+		width: 59%;
+		border-radius: 5px;
+		background-color: #52B7BD;
+
+	}
+</style>
+</head>
+<body>
+	<!-- khối cha wraper sẽ chia làm 3 dòng tương ứng với 3 div header,content và footer -->
+	<div class="wrapper">
+		<div class="header">
+			<div class="header-top">
+				<!-- <img src="images/123.jpg" alt=""> -->
+			</div>
+			<div class="menu">
+				<ul>
+					<tr>
+						<td> Trang chủ |</td>
+						<td> Giới thiệu |</td>
+						<td> Tin tức |</td>
+						<td> Liên hệ |</td>
+						<td> Diễn đàn </td>
+					</tr>
+				</ul>
+			</div>
+		</div>
+		<!-- khối nôi dung ở dòng giữa - sẽ chia khối này làm 3 cột trái,giữa và phải-->
+		<div class="content">
+			<div class="menu-left">
+				menu bên trái
+			</div>
+			<div class="menu-center">
+				<div >
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+			<div class="menu-right">
+				menu bên phải
+			</div>
+		</div>
+		<div class="footer">
+			chữ zent
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- Sử dụng :
+-   margin:0 auto : để căn khối ra giữa nhưng khối đó phải có witdth nhỏ hơn 100%
+-   boder-radius: 5px: để bo viền tròn lại -->
