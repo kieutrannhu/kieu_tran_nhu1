@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS</title>
+	<style type="text/css">
+		div{
+			width: 300px;
+			height: 300px;
+			display: inline-block;
+		}
+		.div1{
+			background: red;
+			border: 20px solid #000;
+			margin: 20px 30px 40px 50px;
+			padding: 20px 30px 40px 50px;
+			position: fixed;
+			left: 20px;
+			top: 40px;
+			z-index: 1;
+		}
+		.child{
+			width: 200px;
+			height: 80px;
+			position: relative;
+			left: 20%;
+			bottom: 20%;
+			z-index: 2;
+			background: #52b7bd;
+		}
+	</style>
+</head>
+<body style="height: 1000px">
+	<div class ="div1">
+	</div>
+	<div class="child">
+		
+	</div>
+	
+</body>
+</html>

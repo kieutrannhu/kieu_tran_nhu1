@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<style type="text/css">
+	body{
+		background-image: url('../images/bg.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100%;
+		background-position: center;
+		width: 80%
+	}
+
+	.menu{
+		width: 80%;
+		height: 60px
+	}
+	#menu{
+		width: 80%;
+		height: 1000px;
+	}
+	#item{
+		font-family: Kozuka Gothic Pro B, Arial;
+		text-decoration: none;
+		line-height: 50px;
+		list-style: none;
+		float: left;
+		font-size: 30px;
+
+	}
+	.item{
+		
+		float: right;
+		text-decoration: none;
+		line-height: 50px;
+		list-style: none;
+		width: 100px;
+		text-align: center;
+		border-radius: 5px;
+
+
+	}
+	.item:hover{
+		
+		background: #e7e0e0;
+	}
+	#item a, .item a, .item1 a{
+		text-decoration: none;
+		color: #000;
+	}
+	.center{
+		float: left;	
+
+	}
+	.center .item1{
+		list-style: none;
+		line-height: 40px;
+		text-decoration: none;
+
+	}
+	.center .custom{
+		
+		margin-top: 670px;
+		list-style: none;
+		width: 250px;
+		line-height: 40px;
+	}
+	.cemter:hover .item1 {
+		color: orange;
+
+	}
+	#block1{     
+		position: absolute;
+		left: 200px; top:100px;
+		width: 200px;
+		height: 200px;
+		background: #f0ebeb;
+		border-radius: 5px;
+
+	}
+	#block2{ 
+		float: left;    
+		position: absolute;
+		left: 410px; top:100px;
+		width: 200px;
+		height: 200px;
+		background: #f0ebeb;
+		border-radius: 5px;
+
+	}
+	#block3{ 
+		float: left;    
+		position: absolute;
+		left: 620px; top:100px;
+		width: 200px;
+		height: 200px;
+		background: #f0ebeb;
+		border-radius: 5px;
+
+	}
+	#block4{ 
+		float: left;    
+		position: absolute;
+		left: 200px; top:330px;
+		width: 200px;
+		height: 200px;
+		background: #f0ebeb;
+		border-radius: 5px;
+
+	}
+	#block5{ 
+		float: left;    
+		position: absolute;
+		left: 410px; top:330px;
+		width: 200px;
+		height: 200px;
+		background: #f0ebeb;
+		border-radius: 5px;
+
+	}
+	#block6{ 
+		float: left;    
+		position: absolute;
+		left: 620px; top:330px;
+		width: 200px;
+		height: 200px;
+		background: #f0ebeb;
+		border-radius: 5px;
+
+	}
+	#block7{ 
+		float: left;    
+		position: absolute;
+		left: 200px; top:560px;
+		width: 200px;
+		height: 200px;
+		background:#f0ebeb;
+		border-radius: 5px;
+
+	}
+	.menu1{
+		margin-bottom: 30px;
+		margin-left: 240px;
+		width: 100%;
+		height: 36px;
+		text-decoration: none;
+
+	}
+	.menu1 .item2{
+		float: left;
+		list-style: none;
+		/*width: 100px;*/
+		height: 30px;
+		/*display: inline-block;*/
+		text-decoration: none;
+		padding-left: 20px;
+		
+	}
+	.item2 {
+		list-style: none;
+		text-decoration: none;
+		line-height: 40px;
+		height: 40px;
+		padding-left: 0px;
+		padding-top: 0px;
+		font-family: Kozuka Gothic Pro B, Arial;
+	}
+
+</style>
+</head>
+<body> 
+	<div class="menu">
+		<ul >
+			<li id="item"><a href="" >Zent Group</a></li>
+			<li class="item"><a href="">Sign In</a></li>
+			<li class="item"><a href="">Sign Up</a></li>
+			<li class="item"><a href="">About</a></li>
+		</ul>
+	</div>
+	<div id="menu">
+		<div class="center">
+			<ul class="item1">
+				<li class="item1"><a href=""><b>Home page</b></a></li>
+				<li class="item1"><a href=""><b>Tab Gallery</b></a></li>
+				<li class="item1"><a href=""><b>Create Tab</b></a></li>
+				<li class="item1"><a href=""><b>Favorite</b></a></li>
+				<li class="item1"><a href=""><b>Tech News</b></a></li>
+				<li class="item1"><a href=""><b>Travel</b></a></li>
+				<li class="item1"><a href=""><b>Photography</b></a></li>
+				<li class="item1"><a href=""><b>Finance World</b> </a></li>
+				<li class="custom"><b>Copyright @2015 ZentGroup</b></li>
+			</ul>
+		</div>
+		<div class="center">
+			<div id="block1">
+				<ul class="item2"><a href="">
+					<li class="item2" > Tech news</li>
+					<li class="item2"><img src="../images/ip.jpg" width="200px" height="145px" border-radius="6px
+						">	</a></li>
+					</ul>
+				</div>
+				<div id="block2">
+					<ul class="item2"><a href="">
+						<li class="item2" >Travel</li>
+						<li class="item2"><img src="../images/travel.jpg" width="200px" height="145px" border-radius="6px
+							">	</li></li>
+						</ul>	</div>
+						<div id="block3">
+							<ul class="item2"><a href="">
+								<li class="item2" >Photography</li>
+								<li class="item2"><img src="../images/photo.jpg" width="200px" height="145px" border-radius="6px
+									">	</li></li>
+								</ul>	</div>
+								<div id="block4"><ul class="item2">
+									<li class="item2" >Finance Wolrd</li>
+									<li class="item2"><img src="../images/ip.jpg" width="200px" height="145px" border-radius="6px
+										">	</li>
+									</ul>	</div>
+									<div id="block5"><ul class="item2">
+										<li class="item2" >Movie</li>
+										<li class="item2"><img src="../images/finance.jpg" width="200px" height="145px" border-radius="6px
+											">	</li>
+										</ul>	</div>
+										<div id="block6"><ul class="item2">
+											<li class="item2" >Cooking</li>
+											<li class="item2"><img src="../images/movie.jpg" width="200px" height="145px" border-r6px
+												">	</li>
+											</ul>	</div>
+											<div id="block7"><ul class="item2">
+												<li class="item2" >Fashion</li>
+												<li class="item2"><img src="../images/fashion.jpg" width="200px" height=border-radius="6px
+													">	</li>
+												</ul>	</div>
+
+											</div>
+										</div>
+										<div class="menu1" >
+											<ul>
+												<li class="item2"><a href="">About</a></li>
+												<li class="item2"><a href="">FAQ</a></li>
+												<li class="item2"><a href="">Block</a></li>
+												<li class="item2"><a href="">Mac App</a></li>
+												<li class="item2"><a href="">Ipad App</a></li>
+												<li class="item2"><a href="">Tern Of Use</a></li>
+												<li class="item2"><a href="">Private Policy</a></li>
+											</ul>
+										</div>
+									</body>
+									</html>

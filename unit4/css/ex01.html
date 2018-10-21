@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS</title>
+	<style type="text/css">
+	body{
+		background:  #ece7d4;
+
+	}
+	.menu{
+		background: #0038a8;
+		height: 50px;
+	}
+	.item{
+		list-style: none;
+		float: left;
+		width: 80px;
+		line-height: 50px;
+	}
+	.item a{
+		text-decoration: none;
+		color: #fff;
+	}
+	.item .submenu{
+		text-align: left;
+		display: none;
+		list-style: none;
+		width: 70px;
+		background: black;
+	}
+	.item:hover{
+		background: red;
+	}
+	.item:hover .submenu{
+		display: block;
+	}
+	
+</style>
+</head>
+<body>
+	<nav> 
+		<ul class="menu">
+			<li class="item"><a href="">Home</a></li>
+			<li class="item"><a href="">Course</a>
+				<ul class="submenu">
+					<li class="submenu"><a href="">Java</a></li>
+					<li class="submenu"><a href="">CSS</a></li>
+					<li class="submenu"><a href="">Html</a></li>
+					<li class="submenu"><a href="">C#</a></li>
+				</ul>
+			</li>
+			<li class="item"><a href="">About</a></li>
+			<li class="item"><a href="">Contact</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>CSS</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<style type="text/css">
+	.menu{
+		background: #7fd05f;
+		width: 100%;
+		height: 50px;
+	}
+	.item{
+		float: left;
+		text-decoration: none;
+		line-height: 50px;
+		list-style: none;
+
+	}
+	.item a{
+		text-decoration: none;
+		color: #fff;
+	}
+	.item a:hover{
+		text-decoration: underline;
+	}
+	.search{
+		margin-right: 10%;
+		float: right;
+		text-decoration: none;
+		list-style: none;
+		line-height: 50px;
+	}
+	.item .item-hider{
+		text-align: left;
+		text-decoration: none;
+		background: #7fd09f;
+		display: none;
+		list-style: none;
+		width: 200px;
+		height: 50px;
+	}
+	
+	.item:hover .item-hider {
+		display: block;
+		background: #7fd09f;
+
+	}
+	.item .item-hider1{
+		text-align: left;
+		text-decoration: none;
+		background: #7fd09f;
+		display: none;
+		list-style: none;
+		width: 100px;
+		position: absolute;
+		left:10px;
+	}
+	.item:hover .item-hider1{
+		display: block;
+
+		
+	}
+	.item .item-hider .item-hider2{
+		text-align: left;
+		text-decoration: none;
+		display: none;
+		list-style: none;
+		width: 100px;
+		position: absolute;
+		left : 200px; top: 50px;
+
+	}
+	.item .item-hider:hover  .item-hider2{
+		display: block;
+		background: #7fd09f;
+	}
+
+</style>
+</head>
+<body background="">
+	<nav> 
+		<ul class="menu">
+			<li class="item"><a href=""><img width="75px" height="37px" src="https://cdn.24h.com.vn/images/2014/24h_logo_trang_chu_2015.png?1" class="initial loading" data-was-processed="true"></a>
+				<ul class="item-hider1">
+					<li class="item-hider"><a href=""><i class="fas fa-angle-right"></i>Trang chủ 24h</a></li>
+					<li class="item-hider"><a href=""><i class="fas fa-angle-right"></i>Tin tức trong ngày</a>
+						<ul class="item-hider2">
+							<a href=""><li class="item-hider"><i class="fas fa-angle-right"></i>Tin Hà Nội</a></li>
+							<a href=""><li class="item-hider"><i class="fas fa-angle-right"></i>Tin TP HCM</a></li>
+							<a href=""><li class="item-hider"><i class="fas fa-angle-right"></i>Tin Hải Phòng</a></li>
+							<a href=""><li class="item-hider"><i class="fas fa-angle-right"></i>Tin..</a></li>
+							<a href=""><li class="item-hider"><i class="fas fa-angle-right"></i>Tin..</a></li>
+							<a href=""><li class="item-hider"><i class="fas fa-angle-right"></i>Tin.</a></li>
+						</ul>
+					</li>
+					<a href=""><li class="item-hider"><i class="fas fa-angle-right"></i>Bóng đá</a></li>
+					<a href=""><li class="item-hider"><i class="fas fa-angle-right"></i>Thế giới</a></li>
+					<a href=""><li class="item-hider"><i class="fas fa-angle-right"></i>Thời trang</a></li>
+					<a href=""><li class="item-hider"><i class="fas fa-angle-right"></i>An ninhh xã hội</a></li>
+					<a href=""><li class="item-hider"><i class="fas fa-angle-right"></i>Thời trang Hi-tech</a></li>
+					<a href=""><li class="item-hider"><i class="fas fa-angle-right"></i>Tài chính- BĐS</a></li>
+					<a href=""><li class="item-hider"><i class="fas fa-angle-right"></i>Máy tính</a></li>
+
+				</ul>
+			</li>
+			<li class="item"><a href=""><img src="https://cdn.24h.com.vn/images/2014/menu-top-xem-danh-muc.gif" alt=""> Xem danh mục |</a></li>
+			<li class="item" ><a href="">Tin tức quốc tế |</a></a></li>
+			<li class="item"><a href="">Hi-tech |</a></li>
+			<li class="item"><a href="">Showbiz |</a></li>
+			<li class="item"><a href="">Giải trí |</a></li>
+			<li class="item"><a href="">Sống trẻ |</a></li>
+			<li class="item"><a href="">Thể thao |</a></li>
+			<li class="item"><a href="">Sức khỏe |</a></li>
+			<li class="item"><a href="">Video |</a></li>
+			<li class="item"><a href="">Phái đẹp |</a></li>
+			<li class="item"><a href="">Game </a></li>
+			<li class="search"><img src="https://cdn.24h.com.vn/images/2014/icon_search.png" width="16px" height="16px" ></i></li>
+		</ul>
+	</nav> 
+</body>
+</html>
