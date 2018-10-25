@@ -1,0 +1,281 @@
+body{
+
+}
+
+#header{
+	/*width: 80%;*/
+
+
+}
+.name{
+	display: inline-block;
+	font-size: 20px;
+	color: #fff;
+	width: 100%;
+	height: 40px;
+	background: red;
+	line-height: 40px;
+	/*padding: 0% 20%;*/
+}
+.item{
+	display: inline-block;
+
+	width: 100%;
+	padding: 0px;
+	background: #b43434;
+
+}
+.item1{
+	display: inline-block;
+	font-size: 15px;
+	color: #fff;	
+	height: 20px;
+	background: #b43434;
+	line-height: 20px;
+	/*padding:0% 20px ;*/
+	border-right: 1px solid;
+	list-style: none;
+
+
+} 
+.item a{
+	text-decoration: none;
+	color: #fff;
+}
+.item1:hover{
+	border-bottom: 2px #fff solid;
+	text-decoration: none;
+
+
+}
+.advertisement{
+	/*width: 80%;*/
+	background: #979797;
+	display: block;
+}
+.advertisement>.h3{
+	/*widtsh: 80%;*/
+	float: left;
+	padding: 0% 35%;
+	padding-right: 30%;
+	position:relative;
+	margin: 0 auto;
+}
+.ad{
+	top: 48%;
+	position: absolute;
+	background: #fff;
+	border-radius: 0 0 0 10px;
+	right: 41%;
+	width: 80px;
+}
+.body{
+	display: inline-block;
+	width: 80%;
+}
+#body1{
+	width: 67%;
+	/*border: ;-right: 1px solid;*/
+	float: left;
+	/*background: #f6efef;*/
+	/*height: 1000px;*/
+
+}
+
+#body2{
+	/*padding: 0 100px;*/
+	width: 32%;
+	
+	display: inline-block;
+}
+
+.h2{
+	font-size: 38px;
+
+	}.content{
+		width: 39%;
+		display: inline-block;
+
+
+	}	
+	.photo{
+		height: 182px;
+		width: 60%;
+		display: inline-block;
+	}
+	.date{
+		height: 50px;
+		line-height: 20px;
+	}
+	.a{
+		display: inline-block;
+		text-decoration: none;
+		color: red;
+	}
+	.content1{
+		padding: 0 auto;
+		width: 37%;
+		border-right: 1px gray solid;
+		float: left;
+	}
+	.content1-1{
+		padding: 0 auto;
+		width: 25%;
+		/*border-right: 1px gray solid;*/
+		float: left;
+	}
+	.h3{
+		font-size: 20px;
+		font-family: Time news Roman, Arial ;
+	}
+	.h3-1{
+		text-align: center;1
+		font-size: 16px;
+		font-family: Time news Roman, Arial ;
+		margin-left:10px;
+		/*padding-top: 10px;*/
+	}
+	.div-3{
+		padding: 0 auto;
+		height: 150px;
+	}
+	#block2{
+		/*border-bottom: 1px gray solid;*/
+	}
+	.block2{
+		/*border-bottom: 1px gray solid;*/
+	}
+	#block3{
+		fon
+	}
+	.block3{
+		display: inline-block;
+		width: 49%;
+		height: 100px;
+
+
+	}
+	.red{
+		color: red;
+		text-decoration: none;
+
+	}
+	.block4{
+		display: inline-block;
+		width: 49%;
+	}
+	.block4-1{
+		display: inline-block;
+		width: 44%;
+	}
+	
+	.block5-1{
+		display: inline-block;
+		width: 45%;
+	}
+	.block6{
+		display: inline-block;
+		width: 25%;
+	}
+	.block6-1{
+		display: inline-block;
+		width: 74%;
+	}
+	.block7{
+		display: inline-block;
+		width: 42%;
+		padding-left: 10px;
+
+	}
+	.name-2{
+		font-size: 30px;
+		background:#ded7c6;
+		height: 50px;
+		line-height: 50px; 
+	}
+	.p1{
+		text-align: center;
+		text-decoration: none;
+		background:#ded7c6; 
+	}
+	.p2{
+		padding-top: 30px;
+
+	}
+	.doc1{
+		display: inline-block;
+		width: 74%;
+		height: 50px;
+	}
+	.doc2{
+		display: inline-block;
+		width: 23%;
+		font-size: 30px;
+		color: red;
+		height: 50px;
+	}
+	.p3{
+		background: #ded7c6;
+		padding: 10px 10px;
+	}
+	.p3menu1{
+		padding: 0 auto;
+		text-align: center;
+		display: inline-block;
+		height: 40px;
+		width: 48%;
+		background: #fff;
+		border-bottom: 5px #469bfb solid;
+		line-height: 40px;
+	}
+	.p3menu2{padding: 0 auto;
+		text-align: center;
+		display: inline-block;
+		height: 40px;
+		width: 48%;
+		background: #fff;
+		border-bottom: 5px #1cddf9 solid;
+		line-height: 40px;
+	}
+	.p3menu3{padding: 0 auto;
+		text-align: center;
+		display: inline-block;
+		height: 40px;
+		width:48%;
+		background: #fff;
+		border-bottom: 5px red solid;
+		line-height: 40px;
+	}
+	.p3menu4{padding: 0 auto;
+		text-align: center;
+		display: inline-block;
+		height: 40px;
+		width: 48%;
+		background: #fff;
+		border-bottom: 5px #f66d5e solid;
+		line-height: 40px;
+	}
+	.p4{
+		width: 96%;
+		height: 40px;
+		background: #fff;
+		line-height: 40px;	
+	}
+	#footer{
+		padding: 0 auto;
+		background: gray;
+		color: #fff;
+
+
+	}
+	.footermenu{
+
+		list-style: none;
+		width:200px;
+		border-right: 1px #fff solid;
+		display: inline-block;
+	}
+	.footermenu>a{
+		text-decoration: none;
+
+	}
