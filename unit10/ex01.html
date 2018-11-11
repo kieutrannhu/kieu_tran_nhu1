@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form name="frm">
+		<input type="text" name="name">
+		<input type="password" name="pass">
+		<textarea name="area"></textarea>
+		<input type="submit" name="submit" value="Submit" onclick="getValue()">
+	</form>
+	<script type="text/javascript">
+		function getValue(){
+			alert(document.frm.name.value);
+			alert(document.frm.pass.value);
+			alert(document.frm.area.value);
+		}
+		
+	</script>
+</body>
+</html>

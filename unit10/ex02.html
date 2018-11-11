@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<style>
+	body{
+		display: inline;
+		width: 100%%;
+		background-image: url(images/anonymous.png); 
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed;
+		color: #fff;
+	}
+	#container{
+		width: 60%;
+		margin: 0 100px;
+		border: 1px solid gray;
+		border-radius: 20px;
+		padding: 0 20px;
+		align-content: center;	
+	}
+	.content{
+		margin-top: 10px;
+		height: 50px;
+	}
+	.input1{
+		margin-right: 20px;
+		padding-right: 50px;
+	}
+	.span{
+		display: inline-block;
+		width: 30%;
+	}
+
+	.error{
+		color: red;
+	}
+	.bt{
+		margin-left: 195px;	
+	}
+	form{
+		width: 85%;
+		margin:80px 200px;
+	}
+</style>
+</head>
+<body>
+	<form action="">
+		<div id="container">
+			<div class="content">
+				<span class="span">Họ tên</span>
+				<input type="textbox" class="input1" name="name" id="name" placeholder="name" required>
+				<span class="error" id="errorName"></span>
+			</div>
+			<div class="content">
+				<span  class="span">Email</span>
+				<input type="email" class="input1" name="email" id="email" placeholder="email" required>
+				<span class="error" id="errorEmail"></span>
+			</div>
+			<div class="content">
+				<span  class="span">Giới tính</span>
+				Nam
+				<input type="radio" name="email"  required>
+				Nữ
+				<input type="radio" name="email"  required>
+			</div>
+			<div class="content">
+				<span  class="span">Số điện thoại</span>
+				<input type="textbox" class="input1" name="mobile" id="mobile" placeholder="mobile" required>
+				<span class="error" id="errorMobile"></span>
+			</div>
+			<div class="content">
+				<span  class="span">Password</span>
+				<input type="password" class="input1" name="password" id="pwd" placeholder="password" required>
+				<span class="error" id="errorPassword"></span>
+			</div>
+			<div class="content">
+				<span  class="span">Confirm password</span>
+				<input type="password" class="input1" name="password" id="pwd1" placeholder=" Confirm password" required>
+				<span class="error" id="errorConfirmPassword"></span>
+			</div>
+		</div>
+		<div style="margin: 20px 100px;">
+			<button id="add" class="bt">Đăng ký</button>
+			<button onclick="reloadpage()" class="bt">Refresh</button>
+
+		</div>
+	</form>
+	
+	<script>
+		function reloadpage(){
+			location.reload();
+		}
+		function validateEmail(email) {
+			var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			return re.test(String(email).toLowerCase());
+		}
+
+		function checkPhoneNumber(phone) {
+			var flag = false;
+			phone = phone.replace('(+84)', '0');
+			phone = phone.replace('+84', '0');
+			phone = phone.replace('0084', '0');
+			phone = phone.replace(/ /g, '');
+			if (phone != '') {
+				var firstNumber = phone.substring(0, 2);
+				if ((firstNumber == '09' || firstNumber == '08'  || firstNumber == '07'  || firstNumber == '06'  || firstNumber == '05' || firstNumber == '04' || firstNumber == '03' || firstNumber == '02') && phone.length == 10) {
+					if (phone.match(/^\d{10}/)) {
+						flag = true;
+					}
+				} 
+			}
+			return flag;
+		}
+
+		document.getElementById('add').addEventListener('click', function(e) {
+			e.preventDefault();
+			var name = document.getElementById('name')
+			var email = document.getElementById('email')
+			var password = document.getElementById('pwd')
+			var mobile = document.getElementById('mobile')
+			var confirmPassword = document.getElementById('pwd1')
+			var checkname=0;
+			var checkemail=0;
+			var checkphone=0;
+			var checkpwd=0;
+			var checkcpwd=0;
+			//kiểm tra tên
+			if (name.value.trim()=='') {
+				document.getElementById('errorName').innerHTML= 'nhập tên';
+			}
+			else{
+				document.getElementById('errorName').innerHTML='';
+				checkname=1;
+			}
+
+			//kiểm tra email
+			if (email.value.trim()=='') {
+				document.getElementById('errorEmail').innerHTML= 'nhập email!';
+			}
+			else if (!validateEmail(email.value)) {
+				document.getElementById('errorEmail').innerHTML='sai định dạng email!';
+			}
+			else{
+				document.getElementById('errorEmail').innerHTML='';
+				checkemail=1;
+			}
+
+			
+			//kiểm tra số điện thoại
+			if (mobile.value.trim()=='') {
+				document.getElementById('errorMobile').innerHTML= 'nhập số điện thoại!';
+			}
+			else if (!checkPhoneNumber(mobile.value)) {
+				document.getElementById('errorMobile').innerHTML='sai định dạng số điện thoại!';
+			}
+			else{
+				document.getElementById('errorMobile').innerHTML='';
+				checkphone=1;
+			}
+ 			//kiểm tra mật khẩu
+ 			if (password.value.trim()=='') {
+ 				document.getElementById('errorPassword').innerHTML= 'nhập mật khẩu!';
+ 			}
+ 			else if (password.value.length < 6) {
+ 				document.getElementById('errorPassword').innerHTML='mật khẩu phải lớn hơn 6 ký tự!';
+ 			}
+ 			else if (password.value.length > 20) {
+ 				document.getElementById('errorPassword').innerHTML='mật khẩu phải nhỏ hơn 20 ký tự!';
+ 			}
+ 			else{
+ 				document.getElementById('errorPassword').innerHTML='';
+ 				checkpwd=1;
+ 			}
+			//kiểm tra nhập lại mật khẩu
+			if (confirmPassword.value.trim()=='') {
+				document.getElementById('errorConfirmPassword').innerHTML= 'nhập lại mật khẩu!';
+			}
+			else if ( confirmPassword.value != password.value) {
+				document.getElementById('errorConfirmPassword').innerHTML='sai mật khẩu!';
+			}
+			else{
+				document.getElementById('errorConfirmPassword').innerHTML='';
+				checkcpwd=1;
+			}
+
+			if (checkname==1 && checkemail==1 && checkphone==1 && checkpwd==1 && checkcpwd==1) {
+				document.getElementById('errorName').innerHTML='';
+				document.getElementById('errorEmail').innerHTML='';
+				document.getElementById('errorMobile').innerHTML='';
+				document.getElementById('errorPassword').innerHTML='';
+				document.getElementById('errorConfirmPassword').innerHTML='';
+	// location.reload();	
+	
+	alert('Đăng ký thành công!!')
+}
+})
+	
+</script>
+</body>
+</html>

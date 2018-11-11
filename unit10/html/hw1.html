@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HomeWork1</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<style type="text/css">
+	body{
+		font-family: Verdana ,arial, time news roman;
+		background: 	#e1f2ea;
+	}
+	.img{
+		
+		margin: 0 auto;
+		display: none;
+animation-duration: 2s;
+	}
+	.img-active{
+		display: block;
+
+	}
+	.numbertext {
+		color: #f2f2f2;
+		font-size: 15px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+	}
+	.text{
+
+		margin: 0 auto;
+		text-align: center;
+		color: #f2f2f2;
+		font-size: 17px;
+		padding: 8px 12px;
+		position: absolute;
+		top:500px; left: 625px;
+	}
+	.bt{
+		cursor:pointer;
+	}
+	.fa-angle-left{
+		text-align: center;
+		position: absolute;
+		top: 250px; left: 15px;
+		color: #f2f2f2;
+		background: #8c92a2;
+		opacity: 0.5;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 50%;
+	}
+	.fa-angle-left:hover {
+		opacity: 0.9;
+
+	}
+
+	.fa-angle-right{
+		text-align: center;
+		position: absolute;
+		top: 250px; right: 15px;
+		color: #f2f2f2;
+		background: #8c92a2;
+		opacity: 0.5;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 50%;
+		}.fa-angle-right:hover {
+			opacity: 0.9;
+
+		}
+		#dot-cover{
+			padding-left: 15px;
+			display: inline-flex;
+			margin:0 600px;
+		}
+		.dot{
+			border-radius: 50%;
+			text-align: center;
+			background: #8c92a2;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-left: 10px;
+			cursor: pointer
+		}
+		.dot-active{
+			cursor: pointer
+			text-align: center;
+			background: gray;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			margin-left: 10px;
+		}
+		</div>
+	</style>
+</head>
+<body>
+	<div>
+		<div>
+			<div class="img img-active" id="img-1">
+				<div class="numbertext">1 / 3</div>
+				<img src="../images/1.jpg" alt="" width="100%">
+				<div class="text"> Photo 1</div>
+			</div>
+			<div class="img" id="img-2">
+				<div class="numbertext">2 / 3</div>
+				<img src="../images/2.jpg" alt="" width="100%">
+				<div class="text"> Photo 2</div>
+			</div>
+			<div class="img" id="img-3">
+				<div class="numbertext">3 / 3</div>
+				<img src="../images/3.jpg" alt="" width="100%">
+				<div class="text"> Photo 3</div>
+			</div>
+		</div>
+
+
+		<div class="bt" id="previous" onclick="bt(-1)"><i class="fas fa-angle-left" ></i></div>
+		<div class="bt" id="next"  onclick="bt(1)"><i class="fas fa-angle-right"></i></div>
+
+	</div >
+	<div id="dot-cover">
+		<span class="dot dot-active" id="dot-1" onclick="h(1)"></span> 
+		<span class="dot" id="dot-2" onclick="h(2)"></span>
+		<snan class="dot" id="dot-3" onclick="h(3)"></span>
+	</div>
+	<script>
+
+		function h(number){
+			var dot = document.getElementsByClassName('dot-active')[0]
+			dot.classList.remove('dot-active')
+			document.getElementById('dot-'+number).classList.add('dot-active')
+
+			var img = document.getElementsByClassName('img-active')[0]
+			img.classList.remove('img-active') 
+			document.getElementById('img-'+number).classList.add('img-active')
+};
+
+	</script>
+</body>
+</html>

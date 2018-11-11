@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+<title>MUO Slideshow</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#previous').on('click', function(){
+// Change to the previous image
+$('#im_' + currentImage).stop().fadeOut(1);
+decreaseImage();
+$('#im_' + currentImage).stop().fadeIn(1);
+}); 
+$('#next').on('click', function(){
+// Change to the next image
+$('#im_' + currentImage).stop().fadeOut(1);
+increaseImage();
+$('#im_' + currentImage).stop().fadeIn(1);
+}); 
+
+var currentImage = 1;
+var totalImages = 3;
+
+function increaseImage() {
+/* Increase currentImage by 1.
+* Resets to 1 if larger than totalImages
+*/
+++currentImage;
+if(currentImage > totalImages) {
+currentImage = 1;
+}
+}
+function decreaseImage() {
+/* Decrease currentImage by 1.
+* Resets to totalImages if smaller than 1
+*/
+--currentImage;
+if(currentImage < 1) {
+currentImage = totalImages;
+}
+}
+});
+window.setInterval(function() {
+$('#previous').click();
+}, 2500);
+</script>
+<style type="text/css">
+html {
+font-family: helvetica, arial;
+}
+#showContainer {
+/* Main wrapper for all images */
+width: 670px;
+padding: 0;
+margin: 0 auto;
+overflow: hidden;
+position: relative;
+}
+.navButton {
+cursor: pointer;
+float: left;
+width: 25px;
+height: 22px;
+padding: 10px;
+margin-right: 5px;
+overflow: hidden;
+text-align: center;
+color: white;
+font-weight: bold;
+font-size: 18px;
+background: #000000;
+opacity: 0.65;
+user-select: none;
+}
+.navButton:hover {
+opacity: 1;
+}
+.caption {
+float: right;
+}
+.imageContainer:not(:first-child) {
+display: none;
+}</style>
+</head>
+<body>
+<div id="showContainer">
+
+<div class="imageContainer" id="im_1">
+<img src="../images/1.jpg" />
+<div class="caption">
+Photo1
+</div>
+</div>
+
+<div class="imageContainer" id="im_2">
+<img src="../images/2.jpg" />
+<div class="caption">
+Photo2
+</div>
+</div>
+
+<div class="imageContainer" id="im_3">
+<img src="../images/3.jpg" />
+<div class="caption">
+Photo3
+</div>
+</div>
+
+<div class="navButton" id="previous">&#10094;</div>
+<div class="navButton" id="next">&#10095;</div>
+</div>
+</body>
+</html>
