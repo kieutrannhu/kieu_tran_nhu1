@@ -1,0 +1,693 @@
+
+body{
+	font-family: arial;
+	background: #fbfbfb;
+}
+.navbar{
+	margin-bottom: 0;
+	width: 100%;
+	padding: 0 50px;
+	height: 50px;
+	background: #fff;
+	position: fixed;
+	top:0px; right: 0px;
+	z-index: 5;
+	box-shadow: 2px 1px #a1a1a1;
+}
+.nav-item{
+	text-align: right;
+}
+.construction{
+	text-align: center;
+	margin-top: 150px;
+	margin-bottom: 50px;
+
+}
+.construction div{
+	color: #545151;
+}
+.hr1{
+	width: 100px;
+	height: 3px;
+	background-color: orange;
+	border-radius: 2px;
+}
+.content{
+	text-align: center;
+}
+.div1{
+	display: inline-block;
+	width: 33%;
+	padding:0;
+	margin-top: 50px;
+}
+.row{
+	height: 60px;
+	width: 100%;
+	margin-top: : 30px;
+	height: 200px;
+}
+.row>div{
+	padding: 0;
+}
+.cr3{
+	font-size: 50px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 25%;
+	color: #fff;
+
+}
+@keyframes rotate360 {
+	100% { transform: rotate(360deg); }
+}
+.rotate360 {
+	cursor: pointer;
+	margin-top: 20px;
+	display: none;
+	animation-name: rotate360;
+	animation-duration: 10s; 
+	-webkit-animation: rotate360 10s;
+	-moz-animation: rotate360 10s;
+	-ms-animation: rotate360 10s;
+	-o-animation: rotate360 10s;
+	animation: rotate360 10s;
+}
+.header-btn1{
+	cursor: pointer;
+	width: 170px;
+	height: 45px;
+	color: #fff;
+	background: #ffb500;
+	font-size: 20px;
+	border:#ffb500;
+	border-radius: 5px;
+}
+#header-btn2{
+	border:none;	
+	background: none;
+}
+#header-btn2~i{
+	font-size: 25px;
+}
+#goTop {
+	color: #ffb500;
+bottom: 200px;
+cursor: pointer;
+display: none;
+height: 35px;
+position: fixed;
+top:200px;
+right: 155px;
+width: 44px;
+z-index: 1000;
+}
+.aboutus{
+	padding-top: 50px;
+	background: #acb8c11f;
+
+}
+.aboutus div{
+	color: #6c757d;
+}
+.bg-section-facts{
+	margin-top: 0;
+	width: 100%;
+	height: 330px;
+	background: url(images/bg-section-facts.jpg);
+
+}
+.div2{
+	display: inline-block;
+	padding: 0;
+	width: 24.5%;
+	margin-top: 135px;
+}
+.count{
+	color: #ffb500;
+}
+.undercount{
+	color: #fff;
+}
+.filtr-container{
+	width: 100%;
+
+}
+.photofiltr{
+	width: 25%;
+	padding: 0;
+	display: inline-block;
+}
+.photofiltr>img{
+	cursor: pointer;
+	width: 100%;
+	height: 266.391px;
+}
+.recentwork{
+	margin-top: 50px;
+}
+.offer{
+	margin: 5px;
+	width: 15%;
+	display: inline-block;
+	background: #f2f2f2;
+	border-radius: 4px;
+	border:1px #f2f2f2 solid;
+	cursor: pointer;
+}
+	/*.fas{
+		color: #a3a3a3;
+		}*/
+		.offer>i{
+			padding-top: 5px;
+			font-size: 45px;
+
+		}
+		.offer:hover{
+			border:1px #ffb500 solid;
+			color: #ffb500;
+		}
+		.offer>div{
+			font-size: 15px;
+			margin-top: 30px;
+			width: 100%;
+			background: #fff;
+		}
+		.man{
+
+			width: 33%;
+			float: left;
+
+		}
+		.man div{
+			margin-top: 80px;
+			cursor: pointer;
+		}
+		.man-icon{
+			float: left;
+			width: 30%;
+			font-size: 60px;
+			color: #ffb500;
+		}
+		.man-content{
+			text-align: left;
+			float: left;
+			width: 69%;
+		}
+		.man-icon:hover{
+			color: #ffb500;
+		}
+		.man-content h2:hover{
+			color: #ffb500;
+		}
+		.underman{
+			width: 100%;
+			display: inline-block;
+			height: 80px;
+			line-height: 80px;
+			text-align: left;
+			background: #ffb500;
+		}
+		.underman>div{
+			padding-left: 35px;
+			color: #fff;
+			width: 65%;
+			display: inline-block;
+		}
+		.underman>input{
+			cursor: pointer;
+			background: #fbfbfb;
+			color: #212529;
+			margin-left: 110px;
+			height: 50px;
+			line-height: 50px;
+			width: 18%;
+			display: inline-block;
+			border-radius: 30px;
+		}
+		.sayaboutus{
+			margin: 50px;
+
+		}
+		.sayaboutus-man{
+			display: inline-block;
+			margin-top: 100px;
+			background: #f2f2f2;
+			width: 90%;
+			padding: 50px 30px;
+		}
+		.sayaboutus-man img{
+			text-align: center;
+			border-radius: 50%;
+			margin-top: -140px;
+		}
+		.whychooseus{
+			display: inline-block;
+			background: #f2f2f2;
+			margin: 50px;
+			padding-top: 50px;
+			height: 550px;
+		}
+		
+		
+		.wcu1{
+			margin: 10px;
+			float: left;
+			width: 49%;
+
+		}
+		.wcu1>img{
+			width: 100%;
+		}
+		.wcu2{
+			margin-left: 3%;
+			float: left;
+			width: 45%;
+
+			text-align: left;
+		}
+		#hr2{margin-left: 0;
+			width: 100px;
+			hei1ght: 3px;
+			background-color: #ffb500;
+			border-radius: 2px;
+		}
+		.card-header {
+			width: 100%;
+			margin-bottom: 0;
+			background-color: #fff;
+			border-bottom: 1px solid rgba(0,0,0,.125);
+		}
+		.card-header:hover{
+			background: #ffb500;
+		}
+		.btn-link{
+			color: #000;
+		}
+		.btn{
+			width: 100%;
+			text-align: left;
+		}
+		.btn:hover{
+			color: #fff;
+			text-decoration: none;
+		}
+		.btncolor{
+			background: #ffb500;
+			color: #fff;
+			text-decoration: none;
+		}
+		.card-header{
+			padding:0;
+		}
+		.card-body{
+			background: #f2f2f2;
+		}
+		.ourteam{
+			margin-top: 50px;
+		}
+		.carousel{
+			margin-top: 50px;
+		}
+		.cr2{
+			
+			margin-left: 2%;
+			width: 30%;
+			/*background: #f2f2f2;*/
+			border-radius: 5px;
+			float: left;
+
+		}
+		.cr1{
+			margin-left: 2%;
+			width: 30%;
+			background: #f2f2f2;
+			border-radius: 5px;
+			float: left;
+		}
+		.otd img{
+			width: 50%;
+		}
+		.ggmap iframe{
+			width: 100%;
+			margin:50px 0;
+
+		} 
+		.contact{
+			margin-top: 50px;
+		}
+		.contactinfo{
+			float: left;
+			margin-top: 50px;
+			padding-left: 50px;
+			width: 33%;
+			text-align: left;
+		}
+		.contactinfo input{
+			border: 1px solid gray;
+			margin-bottom: 20px;
+			height: 41px;
+			line-height: 41px;
+			width: 100%;
+		}
+		.cibtn{
+			cursor: pointer;
+			color: #fff;
+			background: #ffb500;
+		}
+		#textarea{
+			border: 1px solid gray;
+			width: 95%;
+			height: 285px;
+		}
+		.gray-icon{
+			display: inline-block;
+			width: 100%;
+			/*margin-top: 410px;*/
+			background: #c5c1c1;
+			color: gray;
+			height: 100px;
+		}
+		.gray-icon i{
+			cursor: pointer;
+			width: 9%;
+			font-size: 30px;
+			margin-top: 25px;
+			}.gray-icon i:hover{
+				color: #ffb500;
+			}
+			.footer{
+				color: #f2f2f2;
+
+				padding: 50px 0;
+				width: 100%;
+				background: #223647;
+				text-align: center;
+			}
+			.footer div{
+				margin: 50px;
+			}
+			.ft1 i{
+				font-size: 30px;
+				cursor: pointer;
+				margin:2%;
+			}
+			.ft1 i:hover{
+				color: #ffb500;
+			}
+			.end{
+				background: #1a2027;
+				height: 150px;
+			}
+			.endding{
+				padding-top: 20px;
+				color: gray;
+				display: inline-block;
+				width: 49%;
+			}
+			.endding input{
+				background: none;
+				color: gray;
+				border: none;
+				cursor: pointer;
+			}
+			.endding input:hover{
+				color: #ffb500;
+			}
+			#textarea1{
+				height: 200px;
+				display: none;
+			}
+			.cr4{
+				display: none;
+			}
+
+			@media(max-width:900px) {
+				.div1{
+					width: 100%;
+					display: block;
+					text-align: center;
+					margin: 20px auto;
+				}
+				.nav-link h6{
+					color: #ffb500;
+				}
+				.div1 img{
+					width: 50%;
+					text-align: center;
+				}
+
+				.div2{
+					display: block;
+					margin:10px auto;
+				}
+				.bg-section-facts{
+					margin-top: 0;
+					width: 100%;
+					height: 600px;
+					background: url(images/bg-section-facts.jpg);
+
+				}
+				.photofiltr{
+					width: 33%;
+					padding: 0;
+					display: inline-block;
+				}
+				.offer{
+					margin: 5px;
+					width: 30%;
+					display: inline-block;
+					background: #f2f2f2;
+					border-radius: 4px;
+					border:1px #f2f2f2 solid;
+					cursor: pointer;
+				}
+				.man{
+					text-align: center;
+					width: 100%;
+					float: left;
+				}
+				.man-content {
+					text-align: left;
+					float: left;
+					width: 60%;
+				}
+
+				.sayaboutus-man {
+					display: inline-block;
+					margin-top: 100px;
+					background: #f2f2f2;
+					width: 100%;
+					padding: 50px 30px;
+				}
+
+				.sayaboutus-man img {
+					text-align: center;
+					border-radius: 50%;
+					margin-top: -140px;
+					max-width: 50%;
+				}
+				.otd img {
+					width: 35%;
+				}
+				.cr2{
+
+					margin-left: 15%;
+					width: 70%;
+					border-radius: 5px;
+					float: left;
+
+				}
+
+
+				.whychooseus {
+					display: inline-block;
+					background: #f2f2f2;
+					margin: 50px;
+					padding: 50px;
+					height: auto;
+				}
+				.wcu1 {
+					float: left;
+					width: 100%;
+				}
+				.wcu2 {
+					margin-left: 1%;
+					margin-top: 30px;
+					display: inline-block;
+					width: 100%;
+					text-align: left;
+				}
+				.contactinfo{
+					display: inline-block;
+					margin-top: 50px;
+					padding-left: 50px;
+					width: 46%;
+					text-align: left;
+				}
+				#ctif{
+
+					float: left;
+					margin-top: 50px;
+					padding-left: 50px;
+					width: 80%;
+					text-align: left;
+
+				}
+				.contact {
+					height: 850px;
+					margin-top: 50px;
+				}
+				.gray-icon{display: inline-block;
+					margin-top: 0;
+				}
+				.photofiltr {
+					width: 49%;
+					padding: 0;
+					display: inline-block;
+				}
+				.cr1 {
+					margin-left: 2%;
+					width: 31%;
+
+				}
+				.man div {
+					margin-top: 35px;
+				}
+
+				.underman input{
+					margin-left: 0;
+					width: 130px;
+				}
+				.cr3{
+					top:14%;
+					font-size: 40px;
+				}
+				.header-btn1{
+					margin-top: 5%;
+				}
+				#header-btn2{
+					display: none;
+				}
+				#header-btn2~i{
+					cursor: pointer;
+					margin-top: 5%;
+					display: block;
+				}
+				.rotate360{
+					display: block;
+				}
+				#header-btn2~i{
+					display: none;
+				}
+					.endding{
+							width: 100%;
+						}
+						#gray-icon{
+							display: none;
+						}
+				.cr4{
+					display: block;
+
+				}
+				.cr4 i{
+					width: 30%;
+					font-size: 75px;
+				}
+
+
+				@media (max-width: 570px){
+					.offer{
+						width: 90%;	
+					}
+					.photofiltr {
+						width: 98%;
+					}
+					#header-btn2~i{
+						display: none;
+					}
+					.reotate360{
+						display: none;
+					}
+
+					.underman {
+						width: 100%;
+						display: inline-block;
+						height: 150px;
+						line-height: 60px;
+						text-align: center;
+						background: #ffb500;
+					}
+					.underman>div {
+						padding-left: 0;
+						width: 100%; 
+					}
+					.underman>input {
+						display: block;
+						margin-left: 37%;
+						width: 130px;
+						height: 40px;
+						line-height: 35px;
+					}
+					.cr2 {
+						margin-left: 0;
+						width: 100%;
+					}
+					.cr3{
+						top:7%;
+						font-size: 30px;
+					}
+					.div1 img{
+						width: 90%;
+					}
+					.whychooseus {
+						display: inline-block;
+						background: #f2f2f2;
+						margin:20px;
+						padding: 0;
+						height: auto;
+					}
+					.wcu1{
+						margin:0;
+						padding: 10px;
+					}
+					.wcu2{
+						margin:0;
+						padding: 10px;
+					}
+					.cr1 {
+						margin-left: 10%;
+						width: 80%;
+						padding: 0 auto;
+
+					}
+					.bg-section-facts{
+						height: 600px;
+					}
+					.contact{
+						text-align: center;
+						display: inline-table;
+					}
+					.contactinfo{
+						width: 90%;
+						display: inline-block;
+					}
+					#textarea{
+						display: none;
+						}
+						.contactinfo input {
+							border: 1px solid gray;
+							margin-bottom: 20px;
+							/* height: 41px; */
+							line-height: 41px;
+							width: 100%;
+						}
+					
+						#textarea1{
+							
+							display: block;
+						}
+
+					}
+				}
